@@ -1,0 +1,31 @@
+TestPackage/
+│
+├── Package.swift                           # SPM 매니페스트 파일
+├── README.md                               # 프로젝트 소개 및 사용법
+├── SETUP.md                                # 상세 설정 가이드
+├── CONTRIBUTING.md                         # 기여 가이드라인
+├── CHANGELOG.md                            # 버전 변경 이력
+├── LICENSE                                 # MIT 라이선스
+├── Makefile                                # 빌드 자동화 스크립트
+├── .gitignore                             # Git ignore 설정
+├── .swiftlint.yml                         # SwiftLint 설정
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                         # GitHub Actions CI/CD
+│
+├── Sources/
+│   ├── TestPackage/                       # 메인 모듈
+│   │   ├── TestPackage.swift              # SDK 클래스, UserService, User 모델
+│   │   └── Resources/
+│   │       └── config.json                # JSON 리소스 예제
+│   │
+│   └── TestPackageCore/                   # 코어 모듈
+│       └── Core.swift                     # Configuration, Logger, ServiceProtocol
+│
+└── Tests/
+    ├── TestPackageTests/                  # 메인 모듈 테스트
+    │   └── TestPackageTests.swift         # 14개 테스트 케이스
+    │
+    └── TestPackageCoreTests/              # 코어 모듈 테스트
+        └── TestPackageCoreTests.swift     # 5개 테스트 케이스

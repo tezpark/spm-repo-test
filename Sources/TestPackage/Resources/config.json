@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "features": [
+    "user_management",
+    "configuration",
+    "logging"
+  ],
+  "defaultTimeout": 30
+}

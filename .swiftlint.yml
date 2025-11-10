@@ -1,0 +1,63 @@
+# SwiftLint Configuration
+
+# Paths to include during linting
+included:
+  - Sources
+  - Tests
+
+# Paths to exclude during linting
+excluded:
+  - .build
+  - .swiftpm
+  - Packages
+
+# Rules
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - explicit_type_interface
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - multiline_parameters
+  - operator_usage_whitespace
+  - private_outlet
+  - redundant_nil_coalescing
+  - sorted_imports
+  - vertical_parameter_alignment_on_call
+
+# Rule configurations
+identifier_name:
+  min_length: 2
+  max_length: 50
+  excluded:
+    - id
+    - to
+    - db
+
+type_name:
+  min_length: 3
+  max_length: 40
+
+file_length:
+  warning: 500
+  error: 1000
+
+function_body_length:
+  warning: 50
+  error: 100
+
+type_body_length:
+  warning: 300
+  error: 500
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+
+# Reporter type
+reporter: "xcode"
