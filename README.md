@@ -2,7 +2,7 @@
 
 iOS용 Swift Package Manager 테스트 레포지토리입니다. 
 
-v1.0.0
+v1.0.2
 
 ## 요구사항
 

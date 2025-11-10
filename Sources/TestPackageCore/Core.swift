@@ -4,6 +4,7 @@ import Foundation
 public struct Configuration {
     public let apiKey: String
     public let environment: Environment
+    public let test: Bool
     
     public enum Environment {
         case development
@@ -11,7 +12,7 @@ public struct Configuration {
         case production
     }
     
-    public init(apiKey: String, environment: Environment = .production) {
+    public init(apiKey: String, environment: Environment = .production, test: Bool = false) {
         self.apiKey = apiKey
         self.environment = environment
     }
