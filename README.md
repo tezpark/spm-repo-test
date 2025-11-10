@@ -1,6 +1,8 @@
 # TestPackage
 
-iOS용 Swift Package Manager 테스트 레포지토리입니다.
+iOS용 Swift Package Manager 테스트 레포지토리입니다. 
+
+v1.0.0
 
 ## 요구사항
 
